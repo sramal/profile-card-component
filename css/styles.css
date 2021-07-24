@@ -1,0 +1,101 @@
+/* Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+/* CSS Variables */
+:root {
+  --fontFamily: "Kumbh Sans", sans-serif;
+
+  --darkCyan: hsl(185, 75%, 39%);
+  --veryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+  --darkGrayishBlue: hsl(227, 10%, 46%);
+  --darkGray: hsl(0, 0%, 59%);
+
+  --fontSize: 18px;
+}
+
+/* Main CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: var(--fontSize);
+  font-family: var(--fontFamily);
+}
+
+.main {
+  height: 100vh;
+  background: url(../images/bg-pattern-top.svg),
+    url(../images/bg-pattern-bottom.svg);
+  background-position: -50% 175%, 150% -125%;
+  background-repeat: no-repeat, no-repeat;
+  background-color: var(--darkCyan);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  max-width: 349px;
+  height: 300px;
+  padding: 20px;
+
+  background: url(../images/bg-pattern-card.svg) no-repeat;
+  background-color: white;
+
+  border-radius: 10px 10px 10px 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile {
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.name-city {
+  text-align: center;
+  padding: 30px;
+}
+
+.name {
+  font-weight: 700;
+  color: var(--darkGrayishBlue);
+}
+
+.city {
+  font-weight: 400;
+  padding: 8px;
+  font-size: 12px;
+  color: var(--darkGrayishBlue);
+}
+
+.stats {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main ul {
+  list-style-type: none;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-num {
+  font-weight: 700;
+  color: var(--darkGrayishBlue);
+}
+
+.stat-text {
+  font-size: 8px;
+  color: var(--veryDarkDesaturatedBlue);
+}
